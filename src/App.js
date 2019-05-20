@@ -6,7 +6,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Header } from './shared/Header';
 import RentalList from './components/rental/rental-list';
-import { RentalDetail } from './components/rental/rental-detail';
+import RentalDetail from './components/rental/rental-detail';
 
 import { init } from './reducers';
 
