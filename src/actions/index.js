@@ -65,6 +65,8 @@ export const fetchRentals = () => {
 
 export const fetchRentalById = (rentalId) => {
   const rental = rentals.find((rental) => rental.id === rentalId);
+
+
   return {
     type: FETCH_RENTAL_BY_ID,
     rental
