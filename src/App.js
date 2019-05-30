@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Redirect } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'font-awesome/css/font-awesome.min.css';
 import { Header } from './shared/Header';
 import RentalListing from './components/rental/rental-listing';
 import RentalDetail from './components/rental/rental-detail';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
+import { RentalDetailInfo } from './rental-detail-info';
 import * as actions from '../../actions';
 
 class RentalDetail extends React.Component{
@@ -13,10 +13,28 @@ class RentalDetail extends React.Component{
   render(){
     const rental = this.props.rental;
     return(
-      <div>
-        <h1>Im detail. And here is rental id {rental.city} </h1>
-        <h1>Im detail. And here is rental title {rental.title} </h1>
-      </div>
+      <section id='rentalDetails'>
+        <div className='upper-section'>
+          <div className='row'>
+            <div className='col-md-6'>
+              <img src={rental.image} alt=''></img>
+            </div>
+            <div className='col-md-6'>
+              <img src={rental.image} alt=''></img>
+            </div>
+          </div>
+        </div>
+
+        <div className='details-section'>
+          <div className='row'>
+            <div className='col-md-8'>
+              <RentalDetailInfo rental={rental}/>
+            </div>
+            <div className='col-md-4'> BOOKING</div>
+          </div>
+        </div>
+      </section>
+
     )
   }
 }
